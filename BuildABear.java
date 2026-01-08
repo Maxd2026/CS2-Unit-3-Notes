@@ -13,8 +13,7 @@ public class BuildABear {
          private String name; // "every BuildABear has a name..."
          private int fillLevel;
          private double price;
-         private boolean hasSpeaker;
-         private String recording;
+      
          // ENCAPSULATION: keeping variables PRIVATE means
          // they cannot be directly accessed outside of
          // this Java CLASS (data is protected from users)
@@ -65,10 +64,17 @@ public class BuildABear {
          }
    
 
+         // Write a toString() method so that we can print an object's STATE
+         // including this method changes what happens when you print an object
+         // otherwise, doing System.out.println(object) just shows a memory location
+         public String toString() {
+            String state = "BuildABear[" + type + "," + name + "," + fillLevel + "," + price + "]";
+            return state;
+         }
 
 
 
 
 
    
-        }
+        } // END CLASS
