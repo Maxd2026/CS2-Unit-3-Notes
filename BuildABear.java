@@ -72,6 +72,20 @@ public class BuildABear {
             return state;
          }
 
+         // MUTATORS ("setters") are voice, but accept an arguement to change
+         // the value of an object's instance variable to something new
+
+         // only need setter for variables you WANT the user to change
+         public void setName(String newName) {
+            // assign the object's name to new value
+            this.name = newName;
+         }
+         public void setFillLevel(int newFL) {
+            this.fillLevel = newFL;
+         }
+
+
+
 
 
 
