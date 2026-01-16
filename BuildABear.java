@@ -18,6 +18,11 @@ public class BuildABear {
          // they cannot be directly accessed outside of
          // this Java CLASS (data is protected from users)
 
+         // STATIC VARIABLES belong to the general class
+         private static String storeLocation = "Williamsburg";
+         private static int inventoryCount = 50;
+
+
 
 
          // 2. CONSTRUCTORS (initialize values)
@@ -88,7 +93,11 @@ public class BuildABear {
 
 
 
-
+         // STATIC METHODS are behaviors that belong to the Class
+         // (do not depend on specific object instances)
+         public static void showStore() {
+            System.out.println("Welcome to " + storeLocation + " Build a Bear Workshop!");
+         }
 
    
         } // END CLASS
